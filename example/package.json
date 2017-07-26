@@ -1,0 +1,11 @@
+{
+  "name": "serverless-firebase-app-example",
+  "version": "2.0.5",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "rm -r node_modules && NODE_ENV=production npm i && sls deploy && yarn",
+    "logs": "sls logs -f render -t",
+    "dev": "sls invoke local -f render --path=./event.json"
+  }
+}
