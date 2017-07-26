@@ -1,4 +1,4 @@
-const Application = require('./application');
+const Application = require('../index.js');
 const App = new Application();
 
 App.create('render', data => {
